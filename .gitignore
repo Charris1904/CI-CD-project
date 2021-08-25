@@ -1,0 +1,5 @@
+
+*.class
+*.class
+rest-assured-project/target/classes/helpers/RequestHelper.class
+*.class
