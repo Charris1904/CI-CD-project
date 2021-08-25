@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="1.357" tests="6" errors="0" skipped="4" failures="2">
+  <properties>
+    <property name="java.specification.version" value="15"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\achar\Google Drive\Automation\Integración con CICD y Performance Testing\target\test-classes;C:\Users\achar\Google Drive\Automation\Integración con CICD y Performance Testing\target\classes;C:\Users\achar\.m2\repository\io\rest-assured\rest-assured\4.2.0\rest-assured-4.2.0.jar;C:\Users\achar\.m2\repository\org\codehaus\groovy\groovy\2.5.8\groovy-2.5.8.jar;C:\Users\achar\.m2\repository\org\codehaus\groovy\groovy-xml\2.5.8\groovy-xml-2.5.8.jar;C:\Users\achar\.m2\repository\org\apache\httpcomponents\httpclient\4.5.3\httpclient-4.5.3.jar;C:\Users\achar\.m2\repository\org\apache\httpcomponents\httpcore\4.4.6\httpcore-4.4.6.jar;C:\Users\achar\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\achar\.m2\repository\commons-codec\commons-codec\1.9\commons-codec-1.9.jar;C:\Users\achar\.m2\repository\org\apache\httpcomponents\httpmime\4.5.3\httpmime-4.5.3.jar;C:\Users\achar\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\achar\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\achar\.m2\repository\io\rest-assured\json-path\4.2.0\json-path-4.2.0.jar;C:\Users\achar\.m2\repository\org\codehaus\groovy\groovy-json\2.5.8\groovy-json-2.5.8.jar;C:\Users\achar\.m2\repository\io\rest-assured\rest-assured-common\4.2.0\rest-assured-common-4.2.0.jar;C:\Users\achar\.m2\repository\io\rest-assured\xml-path\4.2.0\xml-path-4.2.0.jar;C:\Users\achar\.m2\repository\org\apache\commons\commons-lang3\3.4\commons-lang3-3.4.jar;C:\Users\achar\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.2\jakarta.xml.bind-api-2.3.2.jar;C:\Users\achar\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.1\jakarta.activation-api-1.2.1.jar;C:\Users\achar\.m2\repository\com\sun\xml\bind\jaxb-osgi\2.3.0.1\jaxb-osgi-2.3.0.1.jar;C:\Users\achar\.m2\repository\org\apache\sling\org.apache.sling.javax.activation\0.1.0\org.apache.sling.javax.activation-0.1.0.jar;C:\Users\achar\.m2\repository\javax\activation\activation\1.1.1\activation-1.1.1.jar;C:\Users\achar\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar;C:\Users\achar\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\achar\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar;C:\Users\achar\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.11.3\jackson-core-2.11.3.jar;C:\Users\achar\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.6.0\jackson-databind-2.6.0.jar;C:\Users\achar\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.6.0\jackson-annotations-2.6.0.jar;C:\Users\achar\.m2\repository\io\rest-assured\json-schema-validator\4.3.1\json-schema-validator-4.3.1.jar;C:\Users\achar\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.10\json-schema-validator-2.2.10.jar;C:\Users\achar\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.10\json-schema-core-1.2.10.jar;C:\Users\achar\.m2\repository\com\github\java-json-tools\jackson-coreutils\1.9\jackson-coreutils-1.9.jar;C:\Users\achar\.m2\repository\com\google\guava\guava\16.0.1\guava-16.0.1.jar;C:\Users\achar\.m2\repository\com\github\fge\msg-simple\1.1\msg-simple-1.1.jar;C:\Users\achar\.m2\repository\com\github\fge\btf\1.2\btf-1.2.jar;C:\Users\achar\.m2\repository\com\github\fge\uri-template\0.9\uri-template-0.9.jar;C:\Users\achar\.m2\repository\org\mozilla\rhino\1.7.7.1\rhino-1.7.7.1.jar;C:\Users\achar\.m2\repository\javax\mail\mailapi\1.4.3\mailapi-1.4.3.jar;C:\Users\achar\.m2\repository\joda-time\joda-time\2.9.7\joda-time-2.9.7.jar;C:\Users\achar\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.0.0\libphonenumber-8.0.0.jar;C:\Users\achar\.m2\repository\com\google\code\findbugs\jsr305\3.0.1\jsr305-3.0.1.jar;C:\Users\achar\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.3\jopt-simple-5.0.3.jar;C:\Users\achar\.m2\repository\org\apache\maven\surefire\surefire-testng-utils\2.22.0\surefire-testng-utils-2.22.0.jar;C:\Users\achar\.m2\repository\org\apache\maven\surefire\surefire-grouper\2.22.0\surefire-grouper-2.22.0.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="America/Costa_Rica"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="15"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-15.0.2\bin"/>
+    <property name="sun.java.command" value="C:\Users\achar\AppData\Local\Temp\surefire3886068852317084981\surefirebooter7577910520305184997.jar C:\Users\achar\AppData\Local\Temp\surefire3886068852317084981 2021-08-08T18-46-19_605-jvmRun1 surefire4602168933231031056tmp surefire_05620916600142909932tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\achar\Google Drive\Automation\Integración con CICD y Performance Testing\target\test-classes;C:\Users\achar\Google Drive\Automation\Integración con CICD y Performance Testing\target\classes;C:\Users\achar\.m2\repository\io\rest-assured\rest-assured\4.2.0\rest-assured-4.2.0.jar;C:\Users\achar\.m2\repository\org\codehaus\groovy\groovy\2.5.8\groovy-2.5.8.jar;C:\Users\achar\.m2\repository\org\codehaus\groovy\groovy-xml\2.5.8\groovy-xml-2.5.8.jar;C:\Users\achar\.m2\repository\org\apache\httpcomponents\httpclient\4.5.3\httpclient-4.5.3.jar;C:\Users\achar\.m2\repository\org\apache\httpcomponents\httpcore\4.4.6\httpcore-4.4.6.jar;C:\Users\achar\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\achar\.m2\repository\commons-codec\commons-codec\1.9\commons-codec-1.9.jar;C:\Users\achar\.m2\repository\org\apache\httpcomponents\httpmime\4.5.3\httpmime-4.5.3.jar;C:\Users\achar\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\achar\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\achar\.m2\repository\io\rest-assured\json-path\4.2.0\json-path-4.2.0.jar;C:\Users\achar\.m2\repository\org\codehaus\groovy\groovy-json\2.5.8\groovy-json-2.5.8.jar;C:\Users\achar\.m2\repository\io\rest-assured\rest-assured-common\4.2.0\rest-assured-common-4.2.0.jar;C:\Users\achar\.m2\repository\io\rest-assured\xml-path\4.2.0\xml-path-4.2.0.jar;C:\Users\achar\.m2\repository\org\apache\commons\commons-lang3\3.4\commons-lang3-3.4.jar;C:\Users\achar\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.2\jakarta.xml.bind-api-2.3.2.jar;C:\Users\achar\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.1\jakarta.activation-api-1.2.1.jar;C:\Users\achar\.m2\repository\com\sun\xml\bind\jaxb-osgi\2.3.0.1\jaxb-osgi-2.3.0.1.jar;C:\Users\achar\.m2\repository\org\apache\sling\org.apache.sling.javax.activation\0.1.0\org.apache.sling.javax.activation-0.1.0.jar;C:\Users\achar\.m2\repository\javax\activation\activation\1.1.1\activation-1.1.1.jar;C:\Users\achar\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar;C:\Users\achar\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\achar\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar;C:\Users\achar\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.11.3\jackson-core-2.11.3.jar;C:\Users\achar\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.6.0\jackson-databind-2.6.0.jar;C:\Users\achar\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.6.0\jackson-annotations-2.6.0.jar;C:\Users\achar\.m2\repository\io\rest-assured\json-schema-validator\4.3.1\json-schema-validator-4.3.1.jar;C:\Users\achar\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.10\json-schema-validator-2.2.10.jar;C:\Users\achar\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.10\json-schema-core-1.2.10.jar;C:\Users\achar\.m2\repository\com\github\java-json-tools\jackson-coreutils\1.9\jackson-coreutils-1.9.jar;C:\Users\achar\.m2\repository\com\google\guava\guava\16.0.1\guava-16.0.1.jar;C:\Users\achar\.m2\repository\com\github\fge\msg-simple\1.1\msg-simple-1.1.jar;C:\Users\achar\.m2\repository\com\github\fge\btf\1.2\btf-1.2.jar;C:\Users\achar\.m2\repository\com\github\fge\uri-template\0.9\uri-template-0.9.jar;C:\Users\achar\.m2\repository\org\mozilla\rhino\1.7.7.1\rhino-1.7.7.1.jar;C:\Users\achar\.m2\repository\javax\mail\mailapi\1.4.3\mailapi-1.4.3.jar;C:\Users\achar\.m2\repository\joda-time\joda-time\2.9.7\joda-time-2.9.7.jar;C:\Users\achar\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.0.0\libphonenumber-8.0.0.jar;C:\Users\achar\.m2\repository\com\google\code\findbugs\jsr305\3.0.1\jsr305-3.0.1.jar;C:\Users\achar\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.3\jopt-simple-5.0.3.jar;C:\Users\achar\.m2\repository\org\apache\maven\surefire\surefire-testng-utils\2.22.0\surefire-testng-utils-2.22.0.jar;C:\Users\achar\.m2\repository\org\apache\maven\surefire\surefire-grouper\2.22.0\surefire-grouper-2.22.0.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\achar"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2021-01-19"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-15.0.2"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\achar\Google Drive\Automation\Integración con CICD y Performance Testing"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\achar\AppData\Local\Temp\surefire3886068852317084981\surefirebooter7577910520305184997.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="15.0.2+7-27"/>
+    <property name="user.name" value="achar"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\achar\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\achar\AppData\Local\Temp\"/>
+    <property name="java.version" value="15.0.2"/>
+    <property name="user.dir" value="C:\Users\achar\Google Drive\Automation\Integración con CICD y Performance Testing"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-15.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\apache-maven-3.8.1\bin;C:\Program Files\nodejs\;C:\Users\achar\scoop\shims;C:\Users\achar\AppData\Local\Microsoft\WindowsApps;C:\Users\achar\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\achar\AppData\Local\GitHubDesktop\bin;C:\Users\achar\AppData\Roaming\npm;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="15.0.2+7-27"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="59.0"/>
+  </properties>
+  <testcase name="setup" classname="MiscTests" time="1.152">
+    <failure message="Could not initialize class io.restassured.RestAssured" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class io.restassured.RestAssured
+</failure>
+    <system-err><![CDATA[java.lang.NoClassDefFoundError: Could not initialize class org.codehaus.groovy.vmplugin.v7.Java7
+	at org.codehaus.groovy.vmplugin.VMPluginFactory.<clinit>(VMPluginFactory.java:43)
+	at org.codehaus.groovy.reflection.GroovyClassValueFactory.<clinit>(GroovyClassValueFactory.java:35)
+	at org.codehaus.groovy.reflection.ClassInfo.<clinit>(ClassInfo.java:107)
+	at org.codehaus.groovy.reflection.ReflectionCache.getCachedClass(ReflectionCache.java:95)
+	at org.codehaus.groovy.reflection.ReflectionCache.<clinit>(ReflectionCache.java:39)
+	at org.codehaus.groovy.runtime.metaclass.MetaClassRegistryImpl.registerMethods(MetaClassRegistryImpl.java:210)
+	at org.codehaus.groovy.runtime.metaclass.MetaClassRegistryImpl.<init>(MetaClassRegistryImpl.java:108)
+	at org.codehaus.groovy.runtime.metaclass.MetaClassRegistryImpl.<init>(MetaClassRegistryImpl.java:86)
+	at groovy.lang.GroovySystem.<clinit>(GroovySystem.java:36)
+	at org.codehaus.groovy.runtime.InvokerHelper.<clinit>(InvokerHelper.java:86)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.createMap(ScriptBytecodeAdapter.java:635)
+	at io.restassured.internal.ResponseParserRegistrar.<init>(ResponseParserRegistrar.groovy)
+	at io.restassured.RestAssured.<clinit>(RestAssured.java:347)
+	at BaseTest.setup(BaseTest.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+]]></system-err>
+  </testcase>
+  <testcase name="setup" classname="UserTests" time="1.152">
+    <failure message="Could not initialize class org.codehaus.groovy.reflection.ReflectionCache" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: Could not initialize class org.codehaus.groovy.reflection.ReflectionCache
+</failure>
+  </testcase>
+  <testcase name="ATest_PING_ENDPOINT" classname="MiscTests" time="0">
+    <skipped message="Could not initialize class io.restassured.RestAssured"/>
+  </testcase>
+  <testcase name="Test_Creat_User_Already_Exist" classname="UserTests" time="0">
+    <skipped message="Could not initialize class org.codehaus.groovy.reflection.ReflectionCache"/>
+  </testcase>
+  <testcase name="BTest_HomePage_Response" classname="MiscTests" time="0">
+    <skipped message="Could not initialize class io.restassured.RestAssured"/>
+  </testcase>
+  <testcase name="Test_Creat_User_Successful" classname="UserTests" time="0">
+    <skipped message="Could not initialize class org.codehaus.groovy.reflection.ReflectionCache"/>
+  </testcase>
+</testsuite>
