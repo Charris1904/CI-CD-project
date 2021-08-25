@@ -1,6 +1,0 @@
-helpers\RequestHelper.class
-helpers\DataHelper.class
-model\Article.class
-specifications\RequestSpecs.class
-specifications\ResponseSpecs.class
-model\User.class
