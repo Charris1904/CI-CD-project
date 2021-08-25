@@ -1,5 +1,4 @@
 
 *.class
-*.class
-rest-assured-project/target/classes/helpers/RequestHelper.class
-*.class
+/api_test/target/
+/api_test/.idea/
