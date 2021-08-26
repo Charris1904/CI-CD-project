@@ -1,8 +1,11 @@
 package helpers;
 
+import io.restassured.RestAssured;
+import io.restassured.authentication.BasicAuthScheme;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.response.ResponseBody;
+import io.restassured.specification.RequestSpecification;
 
 import javax.xml.crypto.Data;
 
@@ -16,5 +19,12 @@ public class RequestHelper {
         JsonPath jsonPathEvaluator = response.jsonPath();
         String token = jsonPathEvaluator.get("token.access_token");
         return token;
+    }
+
+    public static RequestSpecification basicAuthentication(){
+        RequestSpecification requestSpecification = RestAssured.given()
+                .auth()
+                .basic(DataHelper.getUserBasicAuth().getName(), DataHelper.getUserBasicAuth().getPassword());
+        return requestSpecification;
     }
 }

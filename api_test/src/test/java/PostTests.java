@@ -11,7 +11,9 @@ import static util.UrlMapping.*;
 
 public class PostTests extends BaseTest {
 
-    @Test
+    private static String postId = "6050";
+
+    @Test(priority = 1)
     public void createPostSuccess(){
         Post post = new Post("Title", "Content");
 
@@ -26,7 +28,7 @@ public class PostTests extends BaseTest {
                 .spec(ResponseSpecs.defaultSpec());
     }
 
-    @Test
+    @Test(priority = 2)
     public void createPostNotSuccess(){
         Post post = new Post("Title", "");
 
@@ -41,7 +43,7 @@ public class PostTests extends BaseTest {
                 .spec(ResponseSpecs.defaultSpec());
     }
 
-    @Test
+    @Test(priority = 3)
     public void getAllPosts() {
         Response response = given()
                 .spec(RequestSpecs.generateToken())
@@ -53,7 +55,7 @@ public class PostTests extends BaseTest {
         System.out.println(response.path(KEY_RESULT_DATA).toString());
     }
 
-    @Test
+    @Test(priority = 4)
     public void getAllPostsNotSuccess() {
         given()
                 .get(GET_ALL_POSTS)
@@ -62,9 +64,8 @@ public class PostTests extends BaseTest {
                 .spec(ResponseSpecs.defaultSpec());
     }
 
-    @Test
+    @Test(priority = 5)
     public void getPostByIdSuccess() {
-        String postId = "6050";
         String path = String.format(POST_BY_ID, postId);
 
         Response response = given()
@@ -77,7 +78,7 @@ public class PostTests extends BaseTest {
         System.out.println(response.path(KEY_DATA).toString());
     }
 
-    @Test
+    @Test(priority = 6)
     public void getPostByIdNotSuccess() {
         String postId = "1";
         String path = String.format(POST_BY_ID, postId);
@@ -92,7 +93,7 @@ public class PostTests extends BaseTest {
                 .spec(ResponseSpecs.defaultSpec());
     }
 
-    @Test
+    @Test(priority = 7)
     public void updatePostByIdSuccess(){
         Post post = new Post("Title Updated", "Content Updated");
         String postId = "6050";
@@ -109,7 +110,7 @@ public class PostTests extends BaseTest {
                 .spec(ResponseSpecs.defaultSpec());
     }
 
-    @Test
+    @Test(priority = 8)
     public void updatePostByIdNotSuccess(){
         Post post = new Post("Title Updated", "Content Updated");
         String postId = "1";
@@ -126,9 +127,8 @@ public class PostTests extends BaseTest {
                 .spec(ResponseSpecs.defaultSpec());
     }
 
-    @Test
+    @Test(priority = 9)
     public void deletePostByIdSuccess(){
-        String postId = "6052";
         String path = String.format(POST_BY_ID, postId);
 
         given()
@@ -141,9 +141,8 @@ public class PostTests extends BaseTest {
                 .spec(ResponseSpecs.defaultSpec());
     }
 
-    @Test
+    @Test(priority = 10)
     public void deletePostByIdNotSuccess(){
-        String postId = "6052";
         String path = String.format(POST_BY_ID, postId);
 
         given()

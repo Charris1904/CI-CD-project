@@ -36,4 +36,8 @@ public class DataHelper {
     public static User getTestUser(){
         return new User("","test3@gmail.com", "pass");
     }
+
+    public static User getUserBasicAuth(){
+        return new User("testuser","", "testpass");
+    }
 }

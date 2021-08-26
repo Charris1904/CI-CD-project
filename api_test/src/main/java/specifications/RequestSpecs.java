@@ -20,4 +20,9 @@ public class RequestSpecs {
         requestSpecBuilder.addHeader("Authorization", "Beasadrer wrongtoken");
         return requestSpecBuilder.build();
     }
+
+    public static RequestSpecification generateBasicAuth(){
+        RequestSpecification requestSpecification = RequestHelper.basicAuthentication();
+        return requestSpecification;
+    }
 }
