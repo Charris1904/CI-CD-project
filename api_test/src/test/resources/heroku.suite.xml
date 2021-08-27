@@ -15,13 +15,13 @@
         <classes>
             <class name="MiscTests"></class>
         </classes>
-    </test>
+    </test>-->
 
     <test name="Post">
         <classes>
             <class name="PostTests"></class>
         </classes>
-    </test>-->
+    </test>
 
     <test name="CommentTests">
         <classes>
