@@ -4,7 +4,7 @@
 
     <parameter name="baseUrl" value="https://api-coffee-testing.herokuapp.com"></parameter>
 
-    <test name="UserTests">
+    <!--<test name="UserTests">
         <classes>
             <class name="UserTests"></class>
         </classes>
@@ -14,6 +14,18 @@
     <test name="Misc">
         <classes>
             <class name="MiscTests"></class>
+        </classes>
+    </test>
+
+    <test name="Post">
+        <classes>
+            <class name="PostTests"></class>
+        </classes>
+    </test>-->
+
+    <test name="CommentTests">
+        <classes>
+            <class name="CommentTests"></class>
         </classes>
     </test>
 

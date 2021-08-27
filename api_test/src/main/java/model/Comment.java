@@ -5,6 +5,9 @@ public class Comment {
     private String name;
     private String comment;
 
+    public Comment() {
+    }
+
     public Comment(String name, String comment) {
         this.name = name;
         this.comment = comment;
@@ -24,5 +27,13 @@ public class Comment {
 
     public void setComment(String comment) {
         this.comment = comment;
+    }
+
+    @Override
+    public String toString() {
+        return "Comment{" +
+                "name='" + name + '\'' +
+                ", comment='" + comment + '\'' +
+                '}';
     }
 }

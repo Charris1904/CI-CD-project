@@ -15,7 +15,7 @@ public class CommentTests extends BaseTest {
     public static String postId = "6054";
     public static String postIdError = "605";
 
-    /*@Test(priority = 1)
+    @Test(priority = 1)
     public void createCommentSuccess() {
         Comment comment = new Comment("Name", "Comment");
         String path = String.format(CREATE_COMMENT, postId);
@@ -45,20 +45,20 @@ public class CommentTests extends BaseTest {
                 .and()
                 .statusCode(406)
                 .spec(ResponseSpecs.defaultSpec());
-    }*/
+    }
 
     @Test(priority = 3)
     public void getCommentByPostIdSuccess() {
         String path = String.format(GET_ALL_COMMENTS, postId);
 
-        Response response = given()
+        Comment response = given()
                 .spec(RequestSpecs.generateBasicAuth())
                 .get(path)
                 .then()
                 .statusCode(200)
-                .extract().response();
+                .extract().response().as(Comment.class);
 
-        System.out.println(response.path(KEY_RESULT_DATA).toString());
+        //System.out.println(response.path(KEY_RESULT_DATA).toString());
     }
 
     @Test(priority = 4)
