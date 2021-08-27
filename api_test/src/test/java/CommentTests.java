@@ -51,14 +51,14 @@ public class CommentTests extends BaseTest {
     public void getCommentByPostIdSuccess() {
         String path = String.format(GET_ALL_COMMENTS, postId);
 
-        Comment response = given()
+        Response response = given()
                 .spec(RequestSpecs.generateBasicAuth())
                 .get(path)
                 .then()
                 .statusCode(200)
-                .extract().response().as(Comment.class);
+                .extract().response();
 
-        //System.out.println(response.path(KEY_RESULT_DATA).toString());
+        System.out.println(response.path(KEY_RESULT_DATA).toString());
     }
 
     @Test(priority = 4)
